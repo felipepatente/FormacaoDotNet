@@ -18,14 +18,18 @@ namespace _7_Condicionais
             if (idadeJoao >= 18)
             {
                 Console.WriteLine("João possui mais de 18 anos de idade. Pode entrar");
-            }else if(quantidadePessoas >= 2)
+
+
+
+            }
+            else if (quantidadePessoas >= 2)
             {
                 Console.WriteLine("Jão não possui mais de 18 anos, mas está acompanhado");
-            }else
+            }
+            else
             {
                 Console.WriteLine("João nao possui mais de 18 anos, não pode entrar");
             }
-
         }
     }
 }
