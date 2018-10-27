@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8-Condicionais2", "8-Condic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9-Escopo", "9-Escopo\9-Escopo.csproj", "{C43AF18F-E26A-4A42-BF55-3C5F1E672958}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P10-CalculaPoupanca", "10-CalculaPoupanca\P10-CalculaPoupanca.csproj", "{F851945B-F9A7-4FC4-890E-D32421BE4C41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P11-CalculaPoupanca2", "P11-CalculaPoupanca2\P11-CalculaPoupanca2.csproj", "{54777CD4-24F5-4824-A8CA-9D6BEB3F5F92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{C43AF18F-E26A-4A42-BF55-3C5F1E672958}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C43AF18F-E26A-4A42-BF55-3C5F1E672958}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C43AF18F-E26A-4A42-BF55-3C5F1E672958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F851945B-F9A7-4FC4-890E-D32421BE4C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F851945B-F9A7-4FC4-890E-D32421BE4C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F851945B-F9A7-4FC4-890E-D32421BE4C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F851945B-F9A7-4FC4-890E-D32421BE4C41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54777CD4-24F5-4824-A8CA-9D6BEB3F5F92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54777CD4-24F5-4824-A8CA-9D6BEB3F5F92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54777CD4-24F5-4824-A8CA-9D6BEB3F5F92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54777CD4-24F5-4824-A8CA-9D6BEB3F5F92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
