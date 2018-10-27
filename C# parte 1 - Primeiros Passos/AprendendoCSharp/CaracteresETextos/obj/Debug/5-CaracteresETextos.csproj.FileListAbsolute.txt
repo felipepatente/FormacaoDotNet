@@ -1,0 +1,5 @@
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\CaracteresETextos\obj\Debug\CaracteresETextos.exe
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\CaracteresETextos\obj\Debug\CaracteresETextos.pdb
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\CaracteresETextos\bin\Debug\CaracteresETextos.exe.config
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\CaracteresETextos\bin\Debug\CaracteresETextos.exe
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\CaracteresETextos\bin\Debug\CaracteresETextos.pdb
