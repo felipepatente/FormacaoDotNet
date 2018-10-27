@@ -1,0 +1,6 @@
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\2-CriandoVariveis\bin\Debug\2-CriandoVariveis.exe.config
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\2-CriandoVariveis\bin\Debug\2-CriandoVariveis.exe
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\2-CriandoVariveis\bin\Debug\2-CriandoVariveis.pdb
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\2-CriandoVariveis\obj\Debug\2-CriandoVariveis.csprojResolveAssemblyReference.cache
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\2-CriandoVariveis\obj\Debug\2-CriandoVariveis.exe
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\2-CriandoVariveis\obj\Debug\2-CriandoVariveis.pdb

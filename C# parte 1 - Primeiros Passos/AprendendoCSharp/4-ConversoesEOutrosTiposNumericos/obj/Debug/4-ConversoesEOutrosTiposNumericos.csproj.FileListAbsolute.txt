@@ -1,0 +1,6 @@
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\4-ConversoesEOutrosTiposNumericos\bin\Debug\4-ConversoesEOutrosTiposNumericos.exe.config
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\4-ConversoesEOutrosTiposNumericos\bin\Debug\4-ConversoesEOutrosTiposNumericos.exe
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\4-ConversoesEOutrosTiposNumericos\bin\Debug\4-ConversoesEOutrosTiposNumericos.pdb
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\4-ConversoesEOutrosTiposNumericos\obj\Debug\4-ConversoesEOutrosTiposNumericos.csprojResolveAssemblyReference.cache
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\4-ConversoesEOutrosTiposNumericos\obj\Debug\4-ConversoesEOutrosTiposNumericos.exe
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\4-ConversoesEOutrosTiposNumericos\obj\Debug\4-ConversoesEOutrosTiposNumericos.pdb

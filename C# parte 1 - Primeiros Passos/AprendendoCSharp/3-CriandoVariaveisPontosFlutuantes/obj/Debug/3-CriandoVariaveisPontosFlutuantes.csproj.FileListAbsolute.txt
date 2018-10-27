@@ -1,0 +1,6 @@
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\3-CriandoVariaveisPontosFlutuantes\bin\Debug\3-CriandoVariaveisPontosFlutuantes.exe.config
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\3-CriandoVariaveisPontosFlutuantes\bin\Debug\3-CriandoVariaveisPontosFlutuantes.exe
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\3-CriandoVariaveisPontosFlutuantes\bin\Debug\3-CriandoVariaveisPontosFlutuantes.pdb
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\3-CriandoVariaveisPontosFlutuantes\obj\Debug\3-CriandoVariaveisPontosFlutuantes.csprojResolveAssemblyReference.cache
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\3-CriandoVariaveisPontosFlutuantes\obj\Debug\3-CriandoVariaveisPontosFlutuantes.exe
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\3-CriandoVariaveisPontosFlutuantes\obj\Debug\3-CriandoVariaveisPontosFlutuantes.pdb
