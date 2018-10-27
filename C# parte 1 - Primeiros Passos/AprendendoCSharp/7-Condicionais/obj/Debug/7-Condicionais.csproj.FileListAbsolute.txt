@@ -1,0 +1,5 @@
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\7-Condicionais\bin\Debug\7-Condicionais.exe.config
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\7-Condicionais\bin\Debug\7-Condicionais.exe
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\7-Condicionais\bin\Debug\7-Condicionais.pdb
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\7-Condicionais\obj\Debug\7-Condicionais.exe
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\7-Condicionais\obj\Debug\7-Condicionais.pdb
