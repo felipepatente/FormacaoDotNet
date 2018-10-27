@@ -1,0 +1,6 @@
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\P12_CalculaPoupanca\bin\Debug\P12_CalculaPoupanca.exe.config
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\P12_CalculaPoupanca\bin\Debug\P12_CalculaPoupanca.exe
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\P12_CalculaPoupanca\bin\Debug\P12_CalculaPoupanca.pdb
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\P12_CalculaPoupanca\obj\Debug\P12_CalculaPoupanca.csprojResolveAssemblyReference.cache
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\P12_CalculaPoupanca\obj\Debug\P12_CalculaPoupanca.exe
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\AprendendoCSharp\P12_CalculaPoupanca\obj\Debug\P12_CalculaPoupanca.pdb
