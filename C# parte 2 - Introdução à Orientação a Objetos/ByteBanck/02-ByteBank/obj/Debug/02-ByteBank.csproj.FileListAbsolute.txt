@@ -1,0 +1,6 @@
+C:\Users\Felipe\documents\visual studio 2015\Projects\ByteBanck\02-ByteBank\bin\Debug\02-ByteBank.exe.config
+C:\Users\Felipe\documents\visual studio 2015\Projects\ByteBanck\02-ByteBank\bin\Debug\02-ByteBank.exe
+C:\Users\Felipe\documents\visual studio 2015\Projects\ByteBanck\02-ByteBank\bin\Debug\02-ByteBank.pdb
+C:\Users\Felipe\documents\visual studio 2015\Projects\ByteBanck\02-ByteBank\obj\Debug\02-ByteBank.csprojResolveAssemblyReference.cache
+C:\Users\Felipe\documents\visual studio 2015\Projects\ByteBanck\02-ByteBank\obj\Debug\02-ByteBank.exe
+C:\Users\Felipe\documents\visual studio 2015\Projects\ByteBanck\02-ByteBank\obj\Debug\02-ByteBank.pdb
