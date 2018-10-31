@@ -32,7 +32,7 @@ namespace _03_ByteBanck
             contaDaGabriela.saldo = 300;
             Console.WriteLine(contaDaGabriela.saldo);
             Console.WriteLine(contaDaGabrielaCosta.saldo);
-
+            
             
         }
     }
