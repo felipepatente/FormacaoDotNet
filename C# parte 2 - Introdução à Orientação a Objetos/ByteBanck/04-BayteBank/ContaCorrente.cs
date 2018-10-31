@@ -30,5 +30,10 @@ namespace _04_ByteBanck
             }
         }
 
+        public void Depositar(double valor)
+        {
+            this.saldo += valor;
+        }
+
     }
 }

@@ -1,1 +1,6 @@
 C:\Users\Felipe\documents\visual studio 2015\Projects\ByteBanck\04-BayteBank\bin\Debug\04-BayteBank.exe.config
+C:\Users\Felipe\documents\visual studio 2015\Projects\ByteBanck\04-BayteBank\bin\Debug\04-BayteBank.exe
+C:\Users\Felipe\documents\visual studio 2015\Projects\ByteBanck\04-BayteBank\bin\Debug\04-BayteBank.pdb
+C:\Users\Felipe\documents\visual studio 2015\Projects\ByteBanck\04-BayteBank\obj\Debug\04-BayteBank.csprojResolveAssemblyReference.cache
+C:\Users\Felipe\documents\visual studio 2015\Projects\ByteBanck\04-BayteBank\obj\Debug\04-BayteBank.exe
+C:\Users\Felipe\documents\visual studio 2015\Projects\ByteBanck\04-BayteBank\obj\Debug\04-BayteBank.pdb

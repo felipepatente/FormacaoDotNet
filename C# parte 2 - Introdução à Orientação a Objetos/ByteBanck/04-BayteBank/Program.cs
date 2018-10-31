@@ -15,6 +15,9 @@ namespace _04_BayteBank
 
             contaDoBruno.titular = "Bruno";
             contaDoBruno.Sacar(50);
+
+            contaDoBruno.Depositar(500);
+            Console.WriteLine(contaDoBruno.saldo);
         }
     }
 }
