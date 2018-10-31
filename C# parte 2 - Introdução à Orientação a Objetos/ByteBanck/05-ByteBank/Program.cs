@@ -19,16 +19,21 @@ namespace _05_ByteBank
 
             ContaCorrente conta = new ContaCorrente();
 
-            conta.titular = gabriela;
+            //conta.titular = gabriela;
             conta.saldo = 500;
             conta.agencia = 563;
             conta.numero = 5634527;
 
-            conta.titular.nome = "Gabriela Costa";
+            //conta.titular.nome = "Gabriela Costa";
 
             Console.WriteLine(gabriela.nome);
 
-            Console.WriteLine(conta.titular.nome);
+            //Console.WriteLine(conta.titular.nome);
+
+            if (conta.titular == null)
+            {
+                Console.WriteLine("É null");
+            }
         }
     }
 }
