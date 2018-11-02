@@ -10,6 +10,7 @@ namespace _07_ByteBanck
     public class ContaCorrente
     {
         public Cliente Titular { get; set; }
+        public static int TotalDeContasCriadas {get; private set;}
         private int _agencia;        
         public int Numero { get; set; }
         private double _saldo = 100;
@@ -18,6 +19,12 @@ namespace _07_ByteBanck
         {
             Agencia = agencia;
             Numero = numero;
+            TotalDeContasCriadas++;
+        }
+
+        public static int ObterTotalDeContasCriadas()
+        {
+            return TotalDeContasCriadas;
         }
 
         public double Saldo
