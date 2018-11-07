@@ -23,7 +23,12 @@ namespace ByteBank.Funcionarios
             _tipo = tipo;
         }
 
-        public double GetBonificiacao()
+        public Funcionario()
+        {
+
+        }
+
+        public virtual double GetBonificiacao()
         {
             if (_tipo == 1)
             {
