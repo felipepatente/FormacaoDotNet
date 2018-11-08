@@ -9,6 +9,7 @@ namespace ByteBank.Funcionarios
     public abstract class Funcionario
     {
         public static int TotalDeFuncionarios { get; private set; }
+        public string Senha { get; set; }
 
         public string Nome { get; set; }
         public string CPF { get; private set; }
@@ -19,6 +20,12 @@ namespace ByteBank.Funcionarios
             CPF = cpf;
             Salario = salario;
             TotalDeFuncionarios++;
+        }
+
+
+        public bool Autenticar(string senha)
+        {
+            return Senha == senha;
         }
 
         public abstract void AumentarSalario();        
