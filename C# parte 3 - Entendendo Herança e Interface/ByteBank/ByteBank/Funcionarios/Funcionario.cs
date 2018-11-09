@@ -21,13 +21,7 @@ namespace ByteBank.Funcionarios
             Salario = salario;
             TotalDeFuncionarios++;
         }
-
-
-        public bool Autenticar(string senha)
-        {
-            return Senha == senha;
-        }
-
+        
         public abstract void AumentarSalario();        
         public abstract double GetBonificiacao();
         

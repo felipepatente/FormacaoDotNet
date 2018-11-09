@@ -28,9 +28,11 @@ namespace ByteBank
             camila.Nome = "Camila";
             camila.Senha = "abc";
 
-            Designer pedro = new Designer("833.222.048-39");
-            pedro.Nome = "Pedro";
-            
+            ParceiroComercial parceiro = new ParceiroComercial();
+            parceiro.Senha = "123456";
+
+            sistemaInterno.Logar(parceiro,"123456");
+
             sistemaInterno.Logar(roberta, "123");
             sistemaInterno.Logar(camila, "abc");
 
