@@ -8,8 +8,9 @@ namespace ByteBank
 
         public static int TotalDeContasCriadas { get; private set; }
         public static double TaxaOperacao { get; set; }
-        private int _agencia;
-        public int Numero { get; set; }
+        public int Numero { get; }
+        public int Agencia { get; }
+
         private double _saldo = 100;
         
         public ContaCorrente(int agencia, int numero)
@@ -19,23 +20,6 @@ namespace ByteBank
 
             TaxaOperacao = 30 / TotalDeContasCriadas;
             TotalDeContasCriadas++;
-        }
-        
-        public int Agencia
-        {
-            get
-            {
-                return _agencia;
-            }
-            set
-            {
-                if (value <= 0)
-                {
-                    return;
-                }
-
-                _agencia = value;
-            }
         }
         
         public double Saldo
