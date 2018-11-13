@@ -30,8 +30,9 @@ namespace ByteBank
             Agencia = agencia;
             Numero = numero;
 
-            //TaxaOperacao = 30 / TotalDeContasCriadas;
             TotalDeContasCriadas++;
+            TaxaOperacao = 30 / TotalDeContasCriadas;
+            
         }
         
         public double Saldo
@@ -55,7 +56,7 @@ namespace ByteBank
         {
             if (_saldo < valor)
             {
-                return false;
+                throw new SaldoInsuficienteException("Saldo Insuficiente para o saque no valor de " + valor);
             }
 
             _saldo -= valor;
