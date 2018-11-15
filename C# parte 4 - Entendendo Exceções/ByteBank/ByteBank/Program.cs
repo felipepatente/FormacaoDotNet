@@ -12,35 +12,20 @@ namespace ByteBank
         {
             try
             {
-                ContaCorrente conta = new ContaCorrente(35, 251);
-                ContaCorrente conta2 = new ContaCorrente(14, 25);
+                ContaCorrente conta1 = new ContaCorrente(4564, 789684);
+                ContaCorrente conta2 = new ContaCorrente(7891, 456794);
 
-                conta.Depositar(50);
-                Console.WriteLine(conta.Saldo);
-                conta.Transferir(1000,conta2);
+                conta1.Transferir(10000, conta2);
             }
-            catch (SaldoInsuficienteException e)
-            {
-                Console.WriteLine(e.Saldo);
-                Console.WriteLine(e.ValorSaque);
-                Console.WriteLine(e.StackTrace);
-
-                Console.WriteLine(e.Message);
-                Console.WriteLine("Exceção do tipo SaldoInsuficienteException");
-            }
-            catch (ArgumentException e)
-            {
-                Console.WriteLine("Argumento com problema: " + e.ParamName);
-                Console.WriteLine("Ocorreu uma exceção do tipo ArgumentException");
-                Console.WriteLine(e.Message);
-            }
-            catch (Exception e)
+            catch (OperacaoFinanceiraException e)
             {
                 Console.WriteLine(e.Message);
                 Console.WriteLine(e.StackTrace);
-                Console.WriteLine("Aconteceu um erro!");
-            }
 
+                Console.WriteLine("Informações da INNER EXCEPTION (exceção interna):");
+                Console.WriteLine(e.InnerException.Message);
+                Console.WriteLine(e.InnerException.StackTrace);
+            }
         }
 
         private static void Metodo()
