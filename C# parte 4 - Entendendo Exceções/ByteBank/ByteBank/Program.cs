@@ -13,13 +13,18 @@ namespace ByteBank
             try
             {
                 ContaCorrente conta = new ContaCorrente(35, 251);
+                ContaCorrente conta2 = new ContaCorrente(14, 25);
 
                 conta.Depositar(50);
                 Console.WriteLine(conta.Saldo);
-                conta.Sacar(500);
+                conta.Transferir(1000,conta2);
             }
             catch (SaldoInsuficienteException e)
             {
+                Console.WriteLine(e.Saldo);
+                Console.WriteLine(e.ValorSaque);
+                Console.WriteLine(e.StackTrace);
+
                 Console.WriteLine(e.Message);
                 Console.WriteLine("Exceção do tipo SaldoInsuficienteException");
             }
