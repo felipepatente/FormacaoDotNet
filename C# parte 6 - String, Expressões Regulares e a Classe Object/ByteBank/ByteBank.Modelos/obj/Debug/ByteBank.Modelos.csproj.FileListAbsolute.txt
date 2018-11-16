@@ -1,6 +1,0 @@
-C:\Users\Felipe\Documents\Visual Studio 2015\Projects\ByteBank\ByteBank.Modelos\bin\Debug\ByteBank.Modelos.dll
-C:\Users\Felipe\Documents\Visual Studio 2015\Projects\ByteBank\ByteBank.Modelos\bin\Debug\ByteBank.Modelos.pdb
-C:\Users\Felipe\Documents\Visual Studio 2015\Projects\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.dll
-C:\Users\Felipe\Documents\Visual Studio 2015\Projects\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.pdb
-C:\Users\Felipe\Documents\Visual Studio 2015\Projects\ByteBank\ByteBank.Modelos\bin\Debug\ByteBank.Modelos.XML
-C:\Users\Felipe\Documents\Visual Studio 2015\Projects\ByteBank\ByteBank.Modelos\obj\Debug\ByteBank.Modelos.csprojResolveAssemblyReference.cache
