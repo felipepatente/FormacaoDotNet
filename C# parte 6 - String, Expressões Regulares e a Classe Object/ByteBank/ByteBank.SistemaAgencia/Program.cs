@@ -20,9 +20,12 @@ namespace ByteBank.SistemaAgencia
             //string padrao = "[0-9]{4,5}[-]{0,1}[0-9]{4}";
             //string padrao = "[0-9]{4,5}-{0,1}[0-9]{4}";
             string padrao = "[0-9]{4,5}-?[0-9]{4}";
-            string textoDeTeste = "Meu nome é Felipe, me ligue em 962544256";
+            string textoDeTeste = "Meu nome é Felipe, me ligue em 96254-4256";
 
             Match resultado = Regex.Match(textoDeTeste, padrao);
+            object conta = new ContaCorrente(20,14);
+
+            Console.WriteLine(conta);
 
             //Console.WriteLine(Regex.IsMatch(textoDeTeste, padrao));            
             Console.WriteLine(resultado.Value);
