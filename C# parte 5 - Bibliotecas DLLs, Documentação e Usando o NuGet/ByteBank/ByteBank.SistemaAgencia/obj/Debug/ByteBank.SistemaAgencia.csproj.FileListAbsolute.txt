@@ -6,3 +6,4 @@ C:\Users\Felipe\Documents\Visual Studio 2015\Projects\ByteBank\ByteBank.SistemaA
 C:\Users\Felipe\Documents\Visual Studio 2015\Projects\ByteBank\ByteBank.SistemaAgencia\obj\Debug\ByteBank.SistemaAgencia.csprojResolveAssemblyReference.cache
 C:\Users\Felipe\Documents\Visual Studio 2015\Projects\ByteBank\ByteBank.SistemaAgencia\obj\Debug\ByteBank.SistemaAgencia.exe
 C:\Users\Felipe\Documents\Visual Studio 2015\Projects\ByteBank\ByteBank.SistemaAgencia\obj\Debug\ByteBank.SistemaAgencia.pdb
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\ByteBank\ByteBank.SistemaAgencia\bin\Debug\ByteBank.Modelos.xml

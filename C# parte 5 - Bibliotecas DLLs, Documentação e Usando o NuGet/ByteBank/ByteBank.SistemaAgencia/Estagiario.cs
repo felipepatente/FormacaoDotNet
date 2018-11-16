@@ -12,5 +12,15 @@ namespace ByteBank.SistemaAgencia
         public Estagiario(double salario, string cpf) : base(salario, cpf)
         {
         }
+
+        public override void AumentarSalario()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override double GetBonificacao()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
