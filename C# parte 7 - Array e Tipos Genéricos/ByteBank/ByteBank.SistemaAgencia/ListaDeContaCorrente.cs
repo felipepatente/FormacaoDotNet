@@ -12,6 +12,14 @@ namespace ByteBank.SistemaAgencia
         private ContaCorrente[] _itens;
         private int _proximaPosicao;
 
+        public int Tamanho
+        {
+            get
+            {                
+                return _proximaPosicao;
+            }
+        }
+
         public ListaDeContaCorrente(int capacidadeInicial = 5)
         {
             _itens = new ContaCorrente[capacidadeInicial];
@@ -20,7 +28,7 @@ namespace ByteBank.SistemaAgencia
 
         public void Adicionar(ContaCorrente item)
         {
-            Console.WriteLine("Proxima: " + _proximaPosicao);
+            //Console.WriteLine("Proxima: " + _proximaPosicao);
             VerificarCapacidade(_proximaPosicao + 1);
             _itens[_proximaPosicao] = item;
             _proximaPosicao++;
@@ -59,8 +67,18 @@ namespace ByteBank.SistemaAgencia
             for (int i = 0; i < _proximaPosicao; i++)
             {
                 ContaCorrente conta = _itens[i];
-                Console.WriteLine($" {i} Conta numero {conta.Agencia} {conta.Numero}");
+                //Console.WriteLine($" {i} Conta numero {conta.Agencia} {conta.Numero}");
             }
+        }
+
+        public ContaCorrente GetItemNoIndice(int indice)
+        {
+            if (indice < 0 || indice >= _proximaPosicao)
+            {
+                throw new ArgumentOutOfRangeException(nameof(indice));
+            }
+
+            return _itens[indice];
         }
 
         private void VerificarCapacidade(int tamanhoNecessario)
@@ -79,14 +97,23 @@ namespace ByteBank.SistemaAgencia
 
             ContaCorrente[] novoArray = new ContaCorrente[novoTamanho];
 
-            Console.WriteLine("Aumentado a capacidade");
+            //Console.WriteLine("Aumentado a capacidade");
             for (int i = 0; i < _itens.Length; i++)
             {
                 novoArray[i] = _itens[i];
-                Console.WriteLine(".");
+                //Console.WriteLine(".");
             }
 
             _itens = novoArray;
+        }
+
+        public ContaCorrente this[int indice]
+        {
+            get
+            {
+                return GetItemNoIndice(indice);
+            }
+            
         }
     }
 }

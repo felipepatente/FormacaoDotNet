@@ -27,11 +27,11 @@ namespace ByteBank.SistemaAgencia
             lista.Adicionar(new ContaCorrente(874, 251432));
             lista.Adicionar(new ContaCorrente(874, 152436));
 
-            lista.EscrverListaNaTela();
-
-            lista.Remover(contaDoGui);
-
-            lista.EscrverListaNaTela();
+            for (int i = 0; i < lista.Tamanho; i++)
+            {
+                ContaCorrente itemAutal = lista[i];
+                Console.WriteLine($"Item na posição {i} = Conta {itemAutal.Numero} / Agência {itemAutal.Agencia}");
+            }
         }
 
         static void TestaArrayContaCorrente()
