@@ -27,7 +27,6 @@ namespace ByteBank.SistemaAgencia
 
         public void Adicionar(T item)
         {
-            //Console.WriteLine("Proxima: " + _proximaPosicao);
             VerificarCapacidade(_proximaPosicao + 1);
             _itens[_proximaPosicao] = item;
             _proximaPosicao++;
@@ -60,8 +59,7 @@ namespace ByteBank.SistemaAgencia
                 _itens[i] = _itens[i + 1];
             }
 
-            _proximaPosicao--;
-            //_itens[_proximaPosicao] = null;
+            _proximaPosicao--;            
         }
 
         public void MeuMetodo(string texto = "certo", int numero = 25)
@@ -73,8 +71,7 @@ namespace ByteBank.SistemaAgencia
         {
             for (int i = 0; i < _proximaPosicao; i++)
             {
-                T conta = _itens[i];
-                //Console.WriteLine($" {i} Conta numero {conta.Agencia} {conta.Numero}");
+                T conta = _itens[i];                
             }
         }
 
@@ -103,12 +100,10 @@ namespace ByteBank.SistemaAgencia
             }
 
             T[] novoArray = new T[novoTamanho];
-
-            //Console.WriteLine("Aumentado a capacidade");
+            
             for (int i = 0; i < _itens.Length; i++)
             {
-                novoArray[i] = _itens[i];
-                //Console.WriteLine(".");
+                novoArray[i] = _itens[i];            
             }
 
             _itens = novoArray;

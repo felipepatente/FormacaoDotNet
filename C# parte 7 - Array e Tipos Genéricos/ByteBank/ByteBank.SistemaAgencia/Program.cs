@@ -13,6 +13,13 @@ namespace ByteBank.SistemaAgencia
         static void Main(string[] args)
         {
             Lista<int> idades = new Lista<int>();
+            idades.Adicionar(5);
+            idades.AdicionarVarios(1, 2, 6, 8, 2);
+            
+            for (int i = 0; i < idades.Tamanho; i++)
+            {
+                int idadeAtual = idades[i];
+            }
         }
 
         static void TestaListaDeObject()
