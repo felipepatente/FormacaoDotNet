@@ -12,15 +12,26 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
-            int[] idades = new int[5];
+            int[] idades = new int[6];
 
             idades[0] = 15;
             idades[1] = 28;
             idades[2] = 35;
             idades[3] = 50;
             idades[4] = 28;
+            idades[5] = 60;
 
-            
+            int acumulador = 0;
+            for (int indice = 0; indice < idades.Length; indice++)
+            {
+                Console.WriteLine($"Acessando o array idades no índice {idades[indice]}");
+                acumulador += idades[indice];
+            }
+
+            int media = acumulador / idades.Length;
+
+            Console.WriteLine("Média: " + media);
+
         }
     }
 }
