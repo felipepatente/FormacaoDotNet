@@ -12,6 +12,11 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
+            Lista<int> idades = new Lista<int>();
+        }
+
+        static void TestaListaDeObject()
+        {
             ListaObject listaDeIdades = new ListaObject();
             listaDeIdades.Adicionar(10);
             listaDeIdades.Adicionar(5);
