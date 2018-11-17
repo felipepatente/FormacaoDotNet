@@ -19,13 +19,28 @@ namespace ByteBank.SistemaAgencia
 
             lista.Adicionar(new ContaCorrente(874, 565555));
             lista.Adicionar(new ContaCorrente(874, 251432));
-            lista.Adicionar(new ContaCorrente(874, 152436));
-            lista.Adicionar(new ContaCorrente(874, 565555));
-            lista.Adicionar(new ContaCorrente(874, 251432));
-            lista.Adicionar(new ContaCorrente(874, 152436));
-            lista.Adicionar(new ContaCorrente(874, 565555));
-            lista.Adicionar(new ContaCorrente(874, 251432));
-            lista.Adicionar(new ContaCorrente(874, 152436));
+
+            ContaCorrente[] contas = new ContaCorrente[]
+            {
+                new ContaCorrente(874, 251432),
+                new ContaCorrente(874, 525145),
+                new ContaCorrente(874, 362511),
+                new ContaCorrente(874, 152465),
+                new ContaCorrente(874, 256885),
+                new ContaCorrente(874, 158822),
+                new ContaCorrente(874, 152466)
+            };
+
+            lista.AdicionarVarios(contas);
+            lista.AdicionarVarios(
+                new ContaCorrente(874, 251432),
+                new ContaCorrente(872, 525145),
+                new ContaCorrente(871, 362511),
+                new ContaCorrente(870, 152465),
+                new ContaCorrente(177, 256885),
+                new ContaCorrente(374, 158822),
+                new ContaCorrente(474, 152466)
+            );
 
             for (int i = 0; i < lista.Tamanho; i++)
             {
@@ -33,7 +48,7 @@ namespace ByteBank.SistemaAgencia
                 Console.WriteLine($"Item na posição {i} = Conta {itemAutal.Numero} / Agência {itemAutal.Agencia}");
             }
         }
-
+        
         static void TestaArrayContaCorrente()
         {
             ContaCorrente[] contas = new ContaCorrente[]
