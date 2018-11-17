@@ -12,19 +12,34 @@ namespace ByteBank.SistemaAgencia
     {
         static void Main(string[] args)
         {
-            ContaCorrente[] contas = new ContaCorrente[] 
+
+            ListaDeContaCorrente lista = new ListaDeContaCorrente();
+
+            lista.Adicionar(new ContaCorrente(874, 565555));
+            lista.Adicionar(new ContaCorrente(874, 251432));
+            lista.Adicionar(new ContaCorrente(874, 152436));
+            lista.Adicionar(new ContaCorrente(874, 565555));
+            lista.Adicionar(new ContaCorrente(874, 251432));
+            lista.Adicionar(new ContaCorrente(874, 152436));
+            lista.Adicionar(new ContaCorrente(874, 565555));
+            lista.Adicionar(new ContaCorrente(874, 251432));
+            lista.Adicionar(new ContaCorrente(874, 152436));
+        }
+
+        static void TestaArrayContaCorrente()
+        {
+            ContaCorrente[] contas = new ContaCorrente[]
             {
                 new ContaCorrente(874, 565555),
                 new ContaCorrente(874, 251445),
                 new ContaCorrente(874, 362555)
             };
-                    
+
             for (int i = 0; i < contas.Length; i++)
             {
                 ContaCorrente contaAtual = contas[i];
                 Console.WriteLine($"Conta {i} {contaAtual.Numero}");
             }
-
         }
 
         static void TestarArrayInt()
