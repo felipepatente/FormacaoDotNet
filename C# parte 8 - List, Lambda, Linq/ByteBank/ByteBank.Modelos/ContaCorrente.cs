@@ -129,12 +129,12 @@ namespace ByteBank.Modelos
         {
             ContaCorrente outraConta = obj as ContaCorrente;
             
-            if (Numero < outraConta.Numero || outraConta == null)
+            if (Saldo < outraConta.Saldo || outraConta == null)
             {
                 return -1;
             }
 
-            if (Numero == outraConta.Numero)
+            if (Saldo == outraConta.Saldo)
             {
                 return 0;
             }
