@@ -22,7 +22,7 @@ namespace ByteBankImportacaoExportacao
                     {
                         string linha = leitor.ReadLine();                    
                         ContaCorrente contaCorrente = ConverterStringParaContaCorrente(linha);
-                        string msg = $"Conta número {contaCorrente.Numero} ag. {contaCorrente.Agencia}. Saldo {contaCorrente.Saldo}";
+                        string msg = $"{contaCorrente.Titular.Nome}: Conta número {contaCorrente.Numero} ag. {contaCorrente.Agencia}. Saldo {contaCorrente.Saldo}";
 
                         Console.WriteLine(msg);
                         //Console.WriteLine(linha);
@@ -34,7 +34,7 @@ namespace ByteBankImportacaoExportacao
 
         static ContaCorrente ConverterStringParaContaCorrente(string linha)
         {
-            string[] campos = linha.Split(' ');
+            string[] campos = linha.Split(',');
 
             int agencia = int.Parse(campos[0]);
             int numero = int.Parse(campos[1]);
