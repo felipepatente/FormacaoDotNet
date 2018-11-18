@@ -13,17 +13,19 @@ namespace ByteBankImportacaoExportacao
         static void Main(string[] args)             
         {
             string enderecoDoArquivo = "contas.txt";
-            FileStream fluxoDoArquivo = new FileStream(enderecoDoArquivo,FileMode.Open);
 
-            byte[] buffer = new byte[1024]; // 1kb
-            int numeroDeBytesLidos = -1;
-
-            while (numeroDeBytesLidos != 0)
+            using (FileStream fluxoDoArquivo = new FileStream(enderecoDoArquivo, FileMode.Open))
             {
-                numeroDeBytesLidos = fluxoDoArquivo.Read(buffer, 0, 1024);                
-            }
-            EscreverBuffer(buffer);
+                byte[] buffer = new byte[1024]; // 1kb
+                int numeroDeBytesLidos = -1;
 
+                while (numeroDeBytesLidos != 0)
+                {
+                    numeroDeBytesLidos = fluxoDoArquivo.Read(buffer, 0, 1024);
+                }
+                EscreverBuffer(buffer);                
+            }
+            
         }
 
         static void EscreverBuffer(byte[] buffer)
@@ -39,19 +41,7 @@ namespace ByteBankImportacaoExportacao
             //}
             
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
     }
 } 
  
