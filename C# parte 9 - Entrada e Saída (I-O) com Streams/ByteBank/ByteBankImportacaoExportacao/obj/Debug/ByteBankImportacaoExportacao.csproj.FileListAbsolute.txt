@@ -1,0 +1,6 @@
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\ByteBank\ByteBankImportacaoExportacao\bin\Debug\ByteBankImportacaoExportacao.exe.config
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\ByteBank\ByteBankImportacaoExportacao\bin\Debug\ByteBankImportacaoExportacao.exe
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\ByteBank\ByteBankImportacaoExportacao\bin\Debug\ByteBankImportacaoExportacao.pdb
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\ByteBank\ByteBankImportacaoExportacao\obj\Debug\ByteBankImportacaoExportacao.csprojResolveAssemblyReference.cache
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\ByteBank\ByteBankImportacaoExportacao\obj\Debug\ByteBankImportacaoExportacao.exe
+C:\Users\Felipe\Documents\Visual Studio 2015\Projects\ByteBank\ByteBankImportacaoExportacao\obj\Debug\ByteBankImportacaoExportacao.pdb
