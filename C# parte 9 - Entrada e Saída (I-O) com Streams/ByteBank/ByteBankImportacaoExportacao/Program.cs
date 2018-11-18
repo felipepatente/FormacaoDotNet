@@ -8,39 +8,24 @@ using System.Threading.Tasks;
 
 namespace ByteBankImportacaoExportacao 
 { 
-    class Program 
+    partial class Program 
     { 
         static void Main(string[] args)             
         {
-            string enderecoDoArquivo = "contas.txt";
+            var enderecoDoArquivo = "contas.txt";
 
-            using (FileStream fluxoDoArquivo = new FileStream(enderecoDoArquivo, FileMode.Open))
+            using (var fluxoDeArquivo = new FileStream(enderecoDoArquivo, FileMode.Open))
             {
-                byte[] buffer = new byte[1024]; // 1kb
-                int numeroDeBytesLidos = -1;
-
-                while (numeroDeBytesLidos != 0)
+                using (StreamReader leitor = new StreamReader(fluxoDeArquivo))
                 {
-                    numeroDeBytesLidos = fluxoDoArquivo.Read(buffer, 0, 1024);
-                    EscreverBuffer(buffer, numeroDeBytesLidos);
+                    while (!leitor.EndOfStream)
+                    {
+                        string linha = leitor.ReadLine();
+                        Console.WriteLine(linha);
+                    }
                 }
-                
+            
             }
-            
-        }
-
-        static void EscreverBuffer(byte[] buffer, int bytesLidos)
-        {
-            var utf8 = Encoding.Default;
-            string texto = utf8.GetString(buffer,0,bytesLidos);
-            Console.WriteLine(texto);
-
-            //foreach (var meuByte in buffer)
-            //{
-            //    Console.Write(meuByte);
-            //    Console.WriteLine(" ");
-            //}
-            
         }
         
     }
