@@ -10,78 +10,37 @@ namespace Alura.Loja.Testes.ConsoleApp
     {
         static void Main(string[] args)
         {
-            //GravarUsandoAdoNet();
-            //GravarUsandoEntity();            
-            //ExcluirProdutos();
-            //RecuperarProdutos();
-            AtualizarProdutos();
-        }
-
-        private static void AtualizarProdutos()
-        {
-            GravarUsandoEntity();
-            RecuperarProdutos();
-
-            using (var repo = new ProdutoDAOEntity())
+            using (var contexto = new LojaContext())
             {
-                Produto primeiro = repo.Produtos().First();
-                primeiro.Nome = "Cassino Royale - Editado";
-                repo.Atualizar(primeiro);
-            }
+                var produtos = contexto.Produtos.ToList();
 
-                RecuperarProdutos();
-        }
-
-        private static void ExcluirProdutos()
-        {
-            using (var repo = new ProdutoDAOEntity())
-            {
-                IList<Produto> produtos = repo.Produtos();
-
-                foreach (var item in produtos)
+                foreach (var p in produtos)
                 {
-                    repo.Remover(item);
-                }                
-            }
-        }
-
-        private static void RecuperarProdutos()
-        {
-            using (var repo = new ProdutoDAOEntity())
-            {
-                IList<Produto> produtos = repo.Produtos();
-                Console.WriteLine("Foram encontrados {0} produto(s). ", produtos.Count);
-                foreach (var item in produtos)
-                {
-                    Console.WriteLine(item.Nome);
+                    Console.WriteLine(p);
                 }
+
+                Console.WriteLine("***************************************************");
+                foreach(var e in contexto.ChangeTracker.Entries()){
+                    Console.WriteLine(e.State);
+                }
+
+                var p1 = produtos.Last();
+                p1.Nome = "007 - O Espião que Me Amava";
+                contexto.SaveChanges();
+
+                Console.WriteLine("***************************************************");
+                foreach (var e in contexto.ChangeTracker.Entries())
+                {
+                    Console.WriteLine(e.State);
+                }
+
+                //produtos = contexto.Produtos.ToList();            
+                //foreach (var p in produtos)
+                //{
+                //    Console.WriteLine(p);
+                //}
+
             }
-        }
-
-        private static void GravarUsandoEntity()
-        {
-            Produto p = new Produto();
-            p.Nome = "Harry Potter e a Ordem da Fênix";
-            p.Categoria = "Livros";
-            p.Preco = 19.89;
-
-            using (var contexto = new ProdutoDAOEntity())
-            {
-                contexto.Adicionar(p);                
-            }
-        }
-
-        private static void GravarUsandoAdoNet()
-        {
-            Produto p = new Produto();
-            p.Nome = "Harry Potter e a Ordem da Fênix";
-            p.Categoria = "Livros";
-            p.Preco = 19.89;
-
-            using (var repo = new ProdutoDAO())
-            {
-                repo.Adicionar(p);
-            }
-        }
+        }        
     }
 }
