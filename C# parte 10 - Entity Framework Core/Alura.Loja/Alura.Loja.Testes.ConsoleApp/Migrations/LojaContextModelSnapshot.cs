@@ -16,6 +16,24 @@ namespace Alura.Loja.Testes.ConsoleApp.Migrations
                 .HasAnnotation("ProductVersion", "1.1.2")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("Alura.Loja.Testes.ConsoleApp.Compra", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<double>("Preco");
+
+                    b.Property<int?>("ProdutoId");
+
+                    b.Property<int>("Quantidade");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProdutoId");
+
+                    b.ToTable("Compras");
+                });
+
             modelBuilder.Entity("Alura.Loja.Testes.ConsoleApp.Produto", b =>
                 {
                     b.Property<int>("Id")
@@ -32,6 +50,13 @@ namespace Alura.Loja.Testes.ConsoleApp.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Produtos");
+                });
+
+            modelBuilder.Entity("Alura.Loja.Testes.ConsoleApp.Compra", b =>
+                {
+                    b.HasOne("Alura.Loja.Testes.ConsoleApp.Produto", "Produto")
+                        .WithMany()
+                        .HasForeignKey("ProdutoId");
                 });
         }
     }
