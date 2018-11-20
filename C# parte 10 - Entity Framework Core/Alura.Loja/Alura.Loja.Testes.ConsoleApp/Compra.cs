@@ -6,5 +6,6 @@
         public double Preco { get; internal set; }
         public Produto Produto { get; internal set; }
         public int Quantidade { get; internal set; }
+        public int ProdutoId { get; set; }
     }
 }

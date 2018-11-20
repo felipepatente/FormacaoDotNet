@@ -8,7 +8,7 @@ using Alura.Loja.Testes.ConsoleApp;
 namespace Alura.Loja.Testes.ConsoleApp.Migrations
 {
     [DbContext(typeof(LojaContext))]
-    [Migration("20181119234431_Compra")]
+    [Migration("20181119235052_Compra")]
     partial class Compra
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,7 +24,7 @@ namespace Alura.Loja.Testes.ConsoleApp.Migrations
 
                     b.Property<double>("Preco");
 
-                    b.Property<int?>("ProdutoId");
+                    b.Property<int>("ProdutoId");
 
                     b.Property<int>("Quantidade");
 
@@ -57,7 +57,8 @@ namespace Alura.Loja.Testes.ConsoleApp.Migrations
                 {
                     b.HasOne("Alura.Loja.Testes.ConsoleApp.Produto", "Produto")
                         .WithMany()
-                        .HasForeignKey("ProdutoId");
+                        .HasForeignKey("ProdutoId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
         }
     }

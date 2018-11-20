@@ -16,7 +16,7 @@ namespace Alura.Loja.Testes.ConsoleApp.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Preco = table.Column<double>(nullable: false),
-                    ProdutoId = table.Column<int>(nullable: true),
+                    ProdutoId = table.Column<int>(nullable: false),
                     Quantidade = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
@@ -27,7 +27,7 @@ namespace Alura.Loja.Testes.ConsoleApp.Migrations
                         column: x => x.ProdutoId,
                         principalTable: "Produtos",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
