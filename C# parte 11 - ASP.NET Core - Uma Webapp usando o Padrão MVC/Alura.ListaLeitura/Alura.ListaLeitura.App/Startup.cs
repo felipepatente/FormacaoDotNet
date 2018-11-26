@@ -17,18 +17,20 @@ namespace Alura.ListaLeitura.App
         {
             var _repo = new LivroRepositorioCSV();
 
-            var caminhoAtendidos = new Dictionary<string, string>
+            var caminhoAtendidos = new Dictionary<string, RequestDelegate>
             {
-                {"/Livros/ParaLer", _repo.ParaLer.ToString()},
-                {"/Livros/Lendo", _repo.Lendo.ToString()},
-                {"/Livros/Lidos", _repo.Lidos.ToString()}
+                {"/Livros/ParaLer", LivrosParaLer},
+                {"/Livros/Lendo", LivrosLendo},
+                {"/Livros/Lidos", LivrosLidos}
             };
 
             if (caminhoAtendidos.ContainsKey(context.Request.Path))
             {
-                return context.Response.WriteAsync(caminhoAtendidos[context.Request.Path]);
+                var metodo = caminhoAtendidos[context.Request.Path];
+                return metodo.Invoke(context);
             }
 
+            context.Response.StatusCode = 404;
             return context.Response.WriteAsync("Caminho Invalido"); 
         }
 
@@ -37,6 +39,20 @@ namespace Alura.ListaLeitura.App
             var _repo = new LivroRepositorioCSV();
 
             return context.Response.WriteAsync(_repo.ParaLer.ToString());            
+        }
+
+        public Task LivrosLendo(HttpContext context)
+        {
+            var _repo = new LivroRepositorioCSV();
+
+            return context.Response.WriteAsync(_repo.Lendo.ToString());
+        }
+
+        public Task LivrosLidos(HttpContext context)
+        {
+            var _repo = new LivroRepositorioCSV();
+
+            return context.Response.WriteAsync(_repo.Lidos.ToString());
         }
     }
 }
