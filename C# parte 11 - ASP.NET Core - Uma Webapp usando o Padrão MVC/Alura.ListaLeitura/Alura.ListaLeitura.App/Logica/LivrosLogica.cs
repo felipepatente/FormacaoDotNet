@@ -1,6 +1,7 @@
 ﻿using Alura.ListaLeitura.App.HTML;
 using Alura.ListaLeitura.App.Repositorio;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Routing;
 using System;
 using System.Collections.Generic;
@@ -11,29 +12,13 @@ using System.Threading.Tasks;
 
 namespace Alura.ListaLeitura.App.Logica
 {
-    public class LivrosLogica
+    public class LivrosController
     {
-        public static Task Detalhes(HttpContext context)
+        public IActionResult ParaLer()
         {
-            int id = Convert.ToInt32(context.GetRouteValue("id"));
-            var repo = new LivroRepositorioCSV();
-            var livro = repo.Todos.First(l => l.Id == id);
-            return context.Response.WriteAsync(livro.Detalhes());
-        }
-
-        public static Task ParaLer(HttpContext context)
-        {
-            var conteudoArquivo = HtmlUtils.CarregaArquivoHTML("para-ler");
             var _repo = new LivroRepositorioCSV();
-
-            foreach (var livro in _repo.ParaLer.Livros)
-            {
-                conteudoArquivo = conteudoArquivo.Replace("#NOVO-ITEM#", $"<li>{livro.Titulo} - {livro.Autor}</li>#NOVO-ITEM#");
-            }
-
-            conteudoArquivo = conteudoArquivo.Replace("#NOVO-ITEM#", "");
-
-            return context.Response.WriteAsync(conteudoArquivo);
+            var html = new ViewResult { ViewName = "para-ler" };
+            return html;
         }
 
         public static Task Lendo(HttpContext context)
@@ -68,9 +53,17 @@ namespace Alura.ListaLeitura.App.Logica
             
         }
 
-        public static Task Teste(HttpContext context)
-        {
-            return context.Response.WriteAsync("Nova Funcionalidade implementada!");
+        public string Detalhes(int id)
+        {            
+            var repo = new LivroRepositorioCSV();
+            var livro = repo.Todos.First(l => l.Id == id);
+            return livro.Detalhes();
         }
+
+        public string Teste()
+        {
+            return "Nova Funcionalidade implementada!";
+        }
+
     }
 }
