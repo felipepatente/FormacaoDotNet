@@ -12,6 +12,7 @@ namespace Alura.ListaLeitura.App
 
         public void Configure(IApplicationBuilder app)
         {
+            //aparece a mensagem de erro
             app.UseDeveloperExceptionPage();
             app.UseMvcWithDefaultRoute();
             

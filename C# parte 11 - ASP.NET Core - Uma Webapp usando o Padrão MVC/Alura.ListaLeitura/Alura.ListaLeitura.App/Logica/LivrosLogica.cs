@@ -1,4 +1,5 @@
 ﻿using Alura.ListaLeitura.App.HTML;
+using Alura.ListaLeitura.App.Negocio;
 using Alura.ListaLeitura.App.Repositorio;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -12,44 +13,31 @@ using System.Threading.Tasks;
 
 namespace Alura.ListaLeitura.App.Logica
 {
-    public class LivrosController
+    public class LivrosController : Controller
     {
+        public IEnumerable<Livro> livros { get; set; }
+
         public IActionResult ParaLer()
         {
-            var _repo = new LivroRepositorioCSV();
-            var html = new ViewResult { ViewName = "para-ler" };
-            return html;
+            var _repo = new LivroRepositorioCSV();            
+            ViewBag.Livros = _repo.ParaLer.Livros;            
+            return View("para-ler");
         }
 
-        public static Task Lendo(HttpContext context)
+        public IActionResult Lendo()
         {
             var _repo = new LivroRepositorioCSV();
-            var conteudoArquivo = HtmlUtils.CarregaArquivoHTML("lendo");
 
-            foreach (var livro in _repo.Lendo.Livros)
-            {
-                conteudoArquivo = conteudoArquivo.Replace("#NOVO-ITEM#", $"<li>{livro.Titulo} - {livro.Autor}</li>#NOVO-ITEM#");
-            }
-
-            conteudoArquivo = conteudoArquivo.Replace("#NOVO-ITEM#", "");
-
-            return context.Response.WriteAsync(conteudoArquivo);
+            ViewBag.livros = _repo.Lendo.Livros;
+            return View("para-ler");
 
         }
 
-        public static Task Lidos(HttpContext context)
+        public IActionResult Lidos()
         {
             var _repo = new LivroRepositorioCSV();
-            var conteudoArquivo = HtmlUtils.CarregaArquivoHTML("lidos");
-
-            foreach (var livro in _repo.Lidos.Livros)
-            {
-                conteudoArquivo = conteudoArquivo.Replace("#NOVO-ITEM#", $"<li>{livro.Titulo} - {livro.Autor}</li>#NOVO-ITEM#");
-            }
-
-            conteudoArquivo = conteudoArquivo.Replace("#NOVO-ITEM#", "");
-
-            return context.Response.WriteAsync(conteudoArquivo);
+            ViewBag.Livros = _repo.Lidos.Livros;
+            return View("para-ler");
             
         }
 
